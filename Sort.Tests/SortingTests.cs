@@ -20,7 +20,6 @@ namespace Sort.Tests
 		}
 
 		[TestCase(null)]
-		[TestCase()]
 		public static void test_QSort_ThrowsNullReferenceException(int[] arr)
 		{
 			Assert.Throws<NullReferenceException>(() => Sorting.QSort(arr));
@@ -39,7 +38,6 @@ namespace Sort.Tests
 		}
 
 		[TestCase(null)]
-		[TestCase()]
 		public static void test_MSort_ThrowsNullReferenceException(int[] arr)
 		{
 			Assert.Throws<NullReferenceException>(() => Sorting.MSort(arr));
