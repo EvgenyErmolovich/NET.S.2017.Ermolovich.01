@@ -109,8 +109,8 @@ namespace Sort
 		/// <param name="a">Array to check</param>
 		private static void ValidInput(int[] a)
 		{
-			if (a.Length == 0) throw new NullReferenceException("Array is empty");
-			if (a == null) throw new NullReferenceException("Null"); 
+			if (a == null) throw new ArgumentNullException("Null");
+			if (a.Length == 0) throw new ArgumentException("Array is empty");
 		}
 	}
 }
